@@ -1,10 +1,18 @@
-import React from "react";
+// import neccessaries from next
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import React, { ReactNode } from "react";
 
-const Layout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
+type LayoutType = {
+  children: ReactNode;
+};
+
+const Layout = ({ children }: LayoutType) => {
   return (
     <>
-      <div>Layout</div>
+      <Navbar />
       {children}
+      <Footer />
     </>
   );
 };
