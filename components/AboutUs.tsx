@@ -18,9 +18,9 @@ const AboutUs = ({ img_src, h1, desc, sect }: AboutUs) => {
         className="w-[100%]  lg:w-[50%] p-8 lg:pl-32 h-96 object-cover"
       />
       <div className="flex flex-col p-10  w-screen gap-3 items-start">
-        <h3 className="text-3xl text-[#154b9a]">{h1}</h3>
-        <h2 className="text-4xl text-[#0e1f51]">{desc}</h2>
-        <p className="text-xl">{sect}</p>
+        <h3 className="text-md md:text-3xl text-[#154b9a]">{h1}</h3>
+        <h2 className="text-sm md:text-4xl text-[#0e1f51]">{desc}</h2>
+        <p className="text-sm md:text-xl text-justify">{sect}</p>
         <div className="flex h-fit mt-8 p-3  gap-8 justify-center items-center   bg-white">
           <svg
             width="46"
@@ -36,12 +36,14 @@ const AboutUs = ({ img_src, h1, desc, sect }: AboutUs) => {
           </svg>
 
           <div>
-            <h3 className="text-[#0e1f51] text-xl">
+            <h3 className="text-[#0e1f51] text-xs md:text-xl">
               Get Instant Professional Advice
             </h3>
-            <h4 className="text-lg">
+            <h4 className="text-xs md:text-lg">
               Ready to Help:{" "}
-              <span className="text-[#154b9a]">+9779803992443</span>
+              <span className="text-[#154b9a] text-xs md:text-lg">
+                +9779803992443
+              </span>
             </h4>
           </div>
         </div>

@@ -36,11 +36,13 @@ const Contact = ({
       className={`${color} py-12 pb-32 text-white flex flex-col items-center justify-center`}
     >
       <h3
-        className={`${status ? "text-[#154B9A]" : "text-[#B2D1FF]"} text-3xl pb-4`}
+        className={`${status ? "text-[#154B9A]" : "text-[#B2D1FF]"} text-sm md:text-2xl pb-2 md:pb-3`}
       >
         Get in Touch
       </h3>
-      <h2 className={`${status ? "text-[#0E1F51]" : "text-white"} text-4xl`}>
+      <h2
+        className={`${status ? "text-[#0E1F51]" : "text-white"} text-md md:text-3xl`}
+      >
         Hey! Let&apos;s Talk
       </h2>
       <div className="flex flex-col lg:flex-row justify-center items-center gap-10 w-screen mt-14 ">
@@ -48,24 +50,24 @@ const Contact = ({
           <input
             type="text"
             placeholder="Name"
-            className="h-10 px-10 text-black rounded-md outline-none border-gray-300 border-2 placeholder:text-black"
+            className="text-sm md:text-lg h-10 px-10 text-black rounded-md outline-none border-gray-300 border-2 placeholder:text-black"
           />
           <input
             type="text"
             placeholder="Email"
-            className="h-10 px-10 rounded-md outline-none border-gray-300 border-2 placeholder:text-black"
+            className="text-xs md:text-lg h-10 px-10 rounded-md outline-none border-gray-300 border-2 placeholder:text-black"
           />
           <input
             type="text"
             placeholder="Phone"
-            className="h-10 px-10 rounded-md outline-none border-gray-300 border-2 placeholder:text-black"
+            className="text-xs md:text-lg h-10 px-10 rounded-md outline-none border-gray-300 border-2 placeholder:text-black"
           />
           <input
             type="text"
             placeholder="Your Message"
-            className="h-10 px-10 rounded-md outline-none border-gray-300 border-2 placeholder:text-black"
+            className="text-xs md:text-lg h-10 px-10 rounded-md outline-none border-gray-300 border-2 placeholder:text-black"
           />
-          <button className=" bg-[#0E1F51] text-white max-w-32 p-2 rounded-lg">
+          <button className=" bg-[#0E1F51] text-white max-w-32 p-2 rounded-lg text-xs md:text-lg ">
             Send Now
           </button>
         </form>
@@ -74,8 +76,8 @@ const Contact = ({
             <div className="flex gap-5" key={index}>
               {icons}
               <div>
-                <h3 className="text-xl">{title}</h3>
-                <h4 className="text-lg">{desc}</h4>
+                <h3 className="text-xs md:text-xl">{title}</h3>
+                <h4 className="text-xs md:text-lg">{desc}</h4>
               </div>
             </div>
           ))}

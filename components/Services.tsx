@@ -280,24 +280,23 @@ const service = [
 
 const Service = () => {
   return (
-    <div className="flex flex-col items-center w-screen h-fit py-10 gap-3">
-      <h4 className="text-3xl text-[#154b9a]">Service</h4>
-      <h2 className="mb-10 text-4xl text-[#0E1F51]">Our Expertise</h2>
-      <div className="flex gap-10 flex-wrap justify-center">
+    <div className="flex flex-col items-center w-screen h-fit ">
+      <h4 className="text-sm md:text-xl text-[#154b9a]">Service</h4>
+      <h2 className="text-md mb-5 md:text-2xl text-[#0E1F51]">Our Expertise</h2>
+      <div className="flex gap-4 flex-wrap justify-center">
         {service.map(({ icon, title, desc }, index) => (
           <div
             key={index}
-            className="h-fit px-10 ml-5 py-10 w-80 flex flex-col gap-2  bg-[#ECF4FF]"
+            className="h-fit px-10 py-5 ml-5 w-80 flex flex-col gap-2  bg-[#ECF4FF]"
           >
             {icon}
-            <h3 className="text-xl">{title}</h3>
+            <h3 className="text-sm md:text-lg">{title}</h3>
             <div className="flex gap-2">
-              {" "}
               <hr className="h-2 w-32 rounded-lg bg-[#0E1F51]" />
               <hr className="bg-[#0E1F51] rounded-lg h-2 w-4" />
             </div>
 
-            <section className="text-lg">{desc}</section>
+            <section className="text-sm md:text-lg">{desc}</section>
           </div>
         ))}
       </div>

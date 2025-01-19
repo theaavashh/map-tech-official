@@ -12,11 +12,11 @@ const HeroSection = () => {
       <div className="flex flex-col items-center lg:w-[40%] pl-20 lg:ml-40 ">
         <Circle />
         <div className="flex flex-col gap-3 -mt-14 ">
-          <h3 className="text-3xl text-[#154b9a]">We are Here</h3>
-          <h2 className="text-4xl font-semibold max-w-96 leading-normal text-[#0e1f51]">
+          <h3 className="md:text-2xl text-lg text-[#154b9a]">We are Here</h3>
+          <h2 className="text-xl md:text-3xl  font-semibold max-w-96 leading-normal text-[#0e1f51]">
             Unlocking Potential through AI and Web Technologies
           </h2>
-          <button className="flex gap-4 items-center text-3xl max-w-fit mt-4 px-4 py-2 bg-[#154B9A] text-white ring-2 rounded-lg">
+          <button className="flex gap-4 items-center text-sm md:text-2xl w-fit mt-4 px-2 py-2 bg-[#154B9A] text-white ring-2 rounded-lg">
             View More <FaLongArrowAltRight />
           </button>
         </div>
