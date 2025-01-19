@@ -9,8 +9,8 @@ import { CiMail } from "react-icons/ci";
 const Footer = () => {
   return (
     <footer className="bg-[#0E1F51] text-white">
-      <div className="w-screen h-fit bg-[#0E1F51] text-white flex flex-col gap-10 lg:flex-row  justify-evenly items-center p-10">
-        <div className="flex flex-col pb-8 pt-5  gap-5 items-center">
+      <div className="w-screen h-fit bg-[#0E1F51] text-white flex flex-col gap-10 lg:flex-row  justify-evenly items-start p-10">
+        <div className="flex flex-col pb-8 pt-5  gap-5 items-start">
           <Image src={Logo} height={50} alt="map-technology-logo" />
           <section className="text-lg text-white max-w-96">
             It is a long established fact that a reader will be distracted by
@@ -59,8 +59,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="section-two flex flex-col gap-5">
-          <h2 className="text-3xl font-bold">Services</h2>
-          <ul className="text-xl flex flex-col gap-2">
+          <h2 className="text-xl font-bold">Services</h2>
+          <ul className="text-lg flex flex-col gap-2">
             <li>Web Design/Development</li>
             <li>App Development</li>
             <li>UI/UX Design</li>
@@ -70,29 +70,29 @@ const Footer = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-5">
-          <h3 className="text-3xl font-bold">Company</h3>
-          <ul className="text-xl flex flex-col gap-3">
+          <h3 className="text-xl font-bold">Company</h3>
+          <ul className="text-lg flex flex-col gap-3">
             <li>About Us</li>
             <li>Contact Us</li>
             <li>Privacy Policy</li>
           </ul>
         </div>
         <div className="flex flex-col gap-3">
-          <h3 className="text-3xl font-bold">Get in touch</h3>
-          <h2 className="text-xl">Sun-Fri</h2>
+          <h3 className="text-xl font-bold">Get in touch</h3>
+          <h2 className="text-lg">Sun-Fri</h2>
           <div className="flex gap-2">
             <IoCallOutline />
             <h3>9745673009</h3>
           </div>
           <div className="flex gap-2">
             <CiMail />
-            <h3>info@maptech.nepal</h3>
+            <h3>info@maptechnepal.com</h3>
           </div>
         </div>
       </div>
       <hr className="py-5 mx-20" />
       <div className="text-center text-2xl pb-4">
-        Copyright {new Date().getFullYear()}, MAP TECHNOLOGY
+        Copyright {new Date().getFullYear()}, M.A.P Tech Pvt. Ltd.
       </div>
     </footer>
   );
