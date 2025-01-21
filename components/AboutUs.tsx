@@ -20,12 +20,12 @@ const AboutUs = ({ img_src, h1, desc, sect, subSect, isAboutUs }: AboutUs) => {
         className="w-[100%] lg:w-[50%] lg:pl-32 h-96  object-cover my-10"
       />
 
-      <div className="flex flex-col w-screen items-start gap-3 px-10">
+      <div className="flex flex-col w-screen items-start gap-3 px-10 my-4">
         <h3 className="text-lg md:text-3xl text-[#154b9a]">{h1}</h3>
         <h2 className="text-xl md:text-4xl text-[#0e1f51]">{desc}</h2>
         <p className="text-lg md:text-xl text-justify">{sect}</p>
         <p className="text-lg md:text-xl text-justify">{subSect}</p>
-        <div className="flex h-fit p-3 mb-8  gap-8 justify-center items-center   bg-white">
+        <div className="flex h-fit p-3 my-6  gap-8 justify-center items-center   bg-white">
           {isAboutUs ? (
             <svg
               width="46"
