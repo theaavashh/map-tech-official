@@ -77,7 +77,7 @@ const service = [
     ),
 
     title: "Web Design / Development",
-    desc: "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout",
+    desc: "We specialize in creating dynamic, responsive websites that deliver seamless user experiences. Whether you're looking for a sleek, modern design or a robust, high-performance site, we ensure your website stands out and drives results.",
   },
   {
     icon: (
@@ -112,7 +112,7 @@ const service = [
       </svg>
     ),
     title: "UI/UX Design",
-    desc: "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout",
+    desc: "we craft intuitive and visually appealing UI/UX designs that enhance user engagement and satisfaction. We collaborate with you to deliver designs that align with your brand, ensuring a seamless experience across all platforms.",
   },
   {
     icon: (
@@ -147,7 +147,7 @@ const service = [
       </svg>
     ),
     title: "Website Migration",
-    desc: "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout",
+    desc: "We offer seamless website migration services to ensure a smooth transition between platforms without compromising performance or SEO.We prioritize a secure, efficient migration process that keeps your website running flawlessly post-move.",
   },
   {
     icon: (
@@ -206,7 +206,7 @@ const service = [
       </svg>
     ),
     title: "App Development",
-    desc: "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout",
+    desc: "We specialize in building robust, scalable, and user-friendly mobile applications tailored to meet your business needs. From concept to deployment, our team uses the latest technologies to create custom apps for iOS and Android platforms.",
   },
   {
     icon: (
@@ -245,7 +245,7 @@ const service = [
       </svg>
     ),
     title: "Hubspot Integration",
-    desc: "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout",
+    desc: "we offer seamless HubSpot integration services to help you automate processes, streamline your workflows, and enhance customer relationship management. With tailored solutions, we help you unlock the full potential of HubSpot to drive growth and improve efficiency across your business.",
   },
   {
     icon: (
@@ -274,15 +274,15 @@ const service = [
     ),
 
     title: "AI Chatbot",
-    desc: "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout",
+    desc: "we design and implement advanced AI chatbot solutions that enhance customer engagement and support. Our intelligent chatbots are powered by cutting-edge AI technologies, offering personalized, real-time assistance across various platforms.",
   },
 ];
 
 const Service = () => {
   return (
-    <div className="flex flex-col items-center w-screen h-fit ">
-      <h4 className="text-sm md:text-xl text-[#154b9a]">Service</h4>
-      <h2 className="text-md mb-5 md:text-2xl text-[#0E1F51]">Our Expertise</h2>
+    <div className="flex flex-col items-center w-screen h-fit my-8 ">
+      <h4 className="text-lg md:text-2xl text-[#154b9a]">Service</h4>
+      <h2 className="text-xl mb-5 md:text-3xl text-[#0E1F51]">Our Expertise</h2>
       <div className="flex gap-4 flex-wrap justify-center">
         {service.map(({ icon, title, desc }, index) => (
           <div
@@ -290,13 +290,15 @@ const Service = () => {
             className="h-fit px-10 py-5 ml-5 w-80 flex flex-col gap-2  bg-[#ECF4FF]"
           >
             {icon}
-            <h3 className="text-sm md:text-lg">{title}</h3>
+            <h3 className="text-lg md:text-lg">{title}</h3>
             <div className="flex gap-2">
               <hr className="h-2 w-32 rounded-lg bg-[#0E1F51]" />
               <hr className="bg-[#0E1F51] rounded-lg h-2 w-4" />
             </div>
 
-            <section className="text-sm md:text-lg">{desc}</section>
+            <section className="text-sm md:text-lg text-justify">
+              {desc}
+            </section>
           </div>
         ))}
       </div>

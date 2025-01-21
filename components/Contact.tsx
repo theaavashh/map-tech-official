@@ -36,36 +36,36 @@ const Contact = ({
       className={`${color} py-12 pb-32 text-white flex flex-col items-center justify-center`}
     >
       <h3
-        className={`${status ? "text-[#154B9A]" : "text-[#B2D1FF]"} text-sm md:text-2xl pb-2 md:pb-3`}
+        className={`${status ? "text-[#154B9A]" : "text-[#B2D1FF]"} text-lg md:text-2xl pb-2 md:pb-3`}
       >
         Get in Touch
       </h3>
       <h2
-        className={`${status ? "text-[#0E1F51]" : "text-white"} text-md md:text-3xl`}
+        className={`${status ? "text-[#0E1F51]" : "text-white"} text-xl md:text-3xl`}
       >
         Hey! Let&apos;s Talk
       </h2>
-      <div className="flex flex-col lg:flex-row justify-center items-center gap-10 w-screen mt-14 ">
-        <form className="flex flex-col items-center gap-5 w-96 p-5 text-black bg-white rounded-lg">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-10 w-screen mt-10 ">
+        <form className="flex flex-col items-center gap-5 w-80 sm:w-96 md:w-[800px] bg-white p-5 text-black rounded-lg mx-9">
           <input
             type="text"
             placeholder="Name"
-            className="text-sm md:text-lg h-10 px-10 text-black rounded-md outline-none border-gray-300 border-2 placeholder:text-black"
+            className="text-xs md:text-lg w-full h-10  px-10 text-black rounded-md outline-none border-gray-300 border-2 placeholder:text-black"
           />
           <input
             type="text"
             placeholder="Email"
-            className="text-xs md:text-lg h-10 px-10 rounded-md outline-none border-gray-300 border-2 placeholder:text-black"
+            className="text-xs md:text-lg h-10 w-full px-10 rounded-md outline-none border-gray-300 border-2 placeholder:text-black"
           />
           <input
             type="text"
             placeholder="Phone"
-            className="text-xs md:text-lg h-10 px-10 rounded-md outline-none border-gray-300 border-2 placeholder:text-black"
+            className="text-xs md:text-lg h-10 w-full px-10 rounded-md outline-none border-gray-300 border-2 placeholder:text-black"
           />
           <input
             type="text"
             placeholder="Your Message"
-            className="text-xs md:text-lg h-10 px-10 rounded-md outline-none border-gray-300 border-2 placeholder:text-black"
+            className="text-xs md:text-lg h-10 w-full px-10 rounded-md outline-none border-gray-300 border-2 placeholder:text-black"
           />
           <button className=" bg-[#0E1F51] text-white max-w-32 p-2 rounded-lg text-xs md:text-lg ">
             Send Now

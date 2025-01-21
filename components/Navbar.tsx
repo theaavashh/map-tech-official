@@ -1,8 +1,9 @@
 "use client";
 
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoIosCloseCircle } from "react-icons/io";
 
@@ -10,6 +11,7 @@ import Logo from "../public/logo.png";
 
 const Navbar = () => {
   const [isMobile, setMobile] = useState<boolean>(false);
+
   const mobileView = () => {
     document.body.style.overflow = "hidden";
     setMobile(true);
@@ -25,7 +27,7 @@ const Navbar = () => {
         className={`${isMobile ? "block" : "hidden"} bg-[#0e1f51] text-white h-screen flex flex-col justify-center items-center text-2xl gap-3`}
       >
         <IoIosCloseCircle onClick={resetToDefault} />
-        <ul className="flex flex-col gap-4">
+        <ul className="flex flex-col gap-4 ">
           <Link href="/">
             <li onClick={resetToDefault}>Home</li>
           </Link>
@@ -44,14 +46,14 @@ const Navbar = () => {
         </ul>
       </div>
       <nav className="grid grid-cols-12">
-        <Link href={"/"} className="col-span-6 ml-10 ">
+        <Link href={"/"} className="col-span-4 ml-10 ">
           <Image src={Logo} alt="Logo" height={150} />
         </Link>
         <GiHamburgerMenu
           onClick={mobileView}
-          className="col-span-6 lg:hidden text-3xl mt-10 mr-8 justify-self-end"
+          className="col-span-8 lg:hidden text-3xl mt-5 mr-8 justify-self-end"
         />
-        <ul className="hidden lg:flex justify-center items-center gap-16 font-semibold tracking-wide col-span-6 h-12 mt-8 text-[#0E1F51] text-2xl ">
+        <ul className="hidden lg:flex lg:justify-start xl:justify-center items-center lg:gap-10 xl:gap-14 font-semibold tracking-wide col-span-8 h-12 mt-8 text-[#0E1F51] xl:text-2xl text-xl ">
           <Link href="/about">
             <li>About</li>
           </Link>

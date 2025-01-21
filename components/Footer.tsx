@@ -10,11 +10,11 @@ const Footer = () => {
   return (
     <footer className="bg-[#0E1F51] text-white">
       <div className="w-screen h-fit bg-[#0E1F51] text-white flex flex-col gap-5 lg:flex-row  justify-evenly items-start p-10">
-        <div className="flex flex-col pb-8 pt-5  gap-5 items-start">
+        <div className="flex flex-col pb-4 pt-5  gap-5 items-start">
           <Image src={Logo} height={50} alt="map-technology-logo" />
           <section className="text-sm md:text-lg text-white max-w-96">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at
+            At M.A.P Tech Pvt. Ltd., we are pioneers in crafting innovative
+            software solutions that drive businesses forward.
           </section>
           <div className="social__mediaHandler flex gap-5">
             <svg

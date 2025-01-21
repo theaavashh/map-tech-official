@@ -15,6 +15,7 @@ const page = () => {
           desc="Empowering Innovation, 
 Shaping the Future"
           sect="Empowering Innovation, Shaping the Future conveys the idea that the company is not just creating new technology but actively enabling progress and driving change."
+          isAboutUs={true}
         />
       </div>
     </div>
