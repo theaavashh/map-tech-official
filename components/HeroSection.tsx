@@ -27,8 +27,8 @@ const HeroSection = () => {
     <div className="h-fit w-screen lg:flex">
       <div className="flex flex-col w-screen lg:w-[60%] pl-16 md:pl-20 ">
         <Circle />
-        <div className="flex flex-col gap-5 -mt-14 ml-2 md:ml-12 sm:mr-0">
-          <h3 className="cont-text w-fit text-xl md:text-2xl ml-12 md:ml-0 xl:text-3xl text-[#154b9a]">
+        <div className="flex flex-col gap-5 -mt-14 -ml-4 md:ml-12 sm:mr-0">
+          <h3 className="cont-text w-fit text-xl md:text-2xl ml-6 md:ml-0 xl:text-3xl text-[#154b9a]">
             Here for you !
           </h3>
           <h2 className="cont-text text-xl md:text-3xl  font-semibold leading-normal max-w-96 text-[#0e1f51] ">
