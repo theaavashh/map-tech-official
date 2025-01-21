@@ -20,7 +20,7 @@ const HeroSection = () => {
             Transforming Ideas Into Intelligent Solutions With AI & Web
             Technology -
           </h2>
-          <Link href="/contact" className="ml-16">
+          <Link href="/contact" className="ml-20">
             <button className="flex gap-2 items-center text-lg md:text-2xl w-fit mt-4 px-2 py-2 bg-[#154B9A] text-white ring-2 rounded-lg ">
               Let&apos;s talk <FaLongArrowAltRight />
             </button>
